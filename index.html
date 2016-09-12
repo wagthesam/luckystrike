@@ -39,6 +39,7 @@
   </head>
   <body>
   <div id="fb-root"></div>
+
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -46,6 +47,24 @@
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=797051137002635";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+ 
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+ 
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
    <section class="trailer-movie">
       <div class="logo" style="width:100%;text-align: center; margin-top: 3em; margin-bottom: 2em;">
         <img src="logo.png" style="height:auto; width:1200px; max-width: 80%"/>
@@ -97,7 +116,13 @@
             </form>
             </div>
             <div style="width: 100%; text-align: center;">
-            <div class="fb-follow" data-href="https://www.facebook.com/hotboxfilm" data-layout="button" data-size="small" data-show-faces="true"></div>
+            <div class="fb-follow" data-href="https://www.facebook.com/hotboxfilm" data-layout="button" data-size="small" data-show-faces="true">
+              
+<a class="twitter-follow-button"
+  href="https://twitter.com/LuckyStrikeFilm">
+Follow Us on Twitter</a>
+
+            </div>
             </div>
             <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
             <!--End mc_embed_signup-->
